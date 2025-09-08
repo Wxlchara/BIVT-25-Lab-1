@@ -48,6 +48,7 @@ namespace Lab1
         {
             bool answer = false;
 
+            
             if (a * a == b || a * a * a == b || b * b == a || b * b * b == a)
             {
                 answer = true;
@@ -131,3 +132,4 @@ namespace Lab1
         }
     }
 }
+
