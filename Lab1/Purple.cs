@@ -48,7 +48,6 @@ namespace Lab1
         {
             bool answer = false;
 
-            
             if (a * a == b || a * a * a == b || b * b == a || b * b * b == a)
             {
                 answer = true;
@@ -113,7 +112,42 @@ namespace Lab1
         {
             int answer = 0;
 
-            // code here
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
 
             // end
 
@@ -124,12 +158,41 @@ namespace Lab1
             bool answer = false;
             const int bank = 10000;
 
-            // code here
+            int s = 0;
+            int d = 0;
+            int g = 0;
+
+            s = ((pupils + 6) / 7) * salary + pupils * 5;
             
+            if (s <= bank)
+            {
+                d += 1;
+            }
+            
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            {
+                g += 0;
+            }
+            else
+            {
+                g += 1;
+            }
+
+            if (d > 0 && g > 0)
+            {
+                answer = true;
+            }
+            else if (d > 0 && g == 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
         }
     }
 }
-
